@@ -5,3 +5,6 @@ React PropTypes deja de tener sentido al utilizar typescript, typescript es much
 Pero las proptypes si que funcionan en runtime al menos en modo desarrollo 
 
 Al hacer el npm run build compilamos la aplicacion y deja de ser typescript y pasa a ser javascript.
+
+.tsx si tiene componentes de React dentro
+.ts si solo tiene typescript sin componentes de React
