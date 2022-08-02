@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <h1>Subs</h1>
      <List subs={subs}/>
-     <Form />
+     <Form onNewSub={setSubs}/>
     </div>
   );
 }
