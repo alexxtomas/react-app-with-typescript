@@ -6,8 +6,7 @@ interface Props {
         description?: string
     }>
 }
-
-export default function List({subs}: Props) {
+const List: React.FunctionComponent<Props> = ({subs}) =>  {
     return (
         <ul>
         {
@@ -24,3 +23,4 @@ export default function List({subs}: Props) {
         </ul>
     )
 }
+export default List 
