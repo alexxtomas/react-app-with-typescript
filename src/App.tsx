@@ -3,6 +3,7 @@ import './App.css';
 import List from './components/List';
 import Form from './components/Form'
 import {Sub, SubsResponseFromApi} from './types'
+import axios from 'axios';
 
 
 interface AppState {
@@ -19,8 +20,9 @@ function App() {
   
   useEffect(() => {
     const fetchSubs = (): Promise<SubsResponseFromApi> => {
-      return fetch('http://localhost:3001/subs')
-              .then(res => res.json())
+      return axios
+              .get('http://localhost:3001/subs')
+              .then(({data}) => data)
     }
 
     const mapFromApiToSubs = (apiResponse: SubsResponseFromApi): Array<Sub> => {
