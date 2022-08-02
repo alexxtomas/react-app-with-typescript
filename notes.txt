@@ -1,0 +1,7 @@
+Para crear una app de react con typescript con create-react-app
+-> npx create-react-app nameOfProject --template typescript
+
+React PropTypes deja de tener sentido al utilizar typescript, typescript es mucha mas potente que las proptypes.
+Pero las proptypes si que funcionan en runtime al menos en modo desarrollo 
+
+Al hacer el npm run build compilamos la aplicacion y deja de ser typescript y pasa a ser javascript.
