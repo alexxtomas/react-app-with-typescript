@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import List from './components/List';
+import Form from './components/Form'
 interface Sub {
   nick: string
   avatar: string
@@ -40,6 +41,7 @@ function App() {
     <div className="App">
       <h1>Subs</h1>
      <List subs={subs}/>
+     <Form />
     </div>
   );
 }
